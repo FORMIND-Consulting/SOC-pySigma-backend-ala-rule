@@ -177,7 +177,7 @@ class alaruleBackend(TextQueryBackend):
 
     def getTable(self, category, product, service):
         if category == "process_creation":
-            table = "Sysmon"
+            table = "SecurityEvent"
             self.eventid = "1"
         elif service and service.lower() == "security":
             table = "SecurityEvent"
